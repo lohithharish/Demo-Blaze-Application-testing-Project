@@ -1,0 +1,628 @@
+%PDF-1.4
+%âãÏÓ
+1 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+2 0 obj
+<< /Length 3432 >>
+stream
+BT
+/F1 22 Tf
+0.39 0.4 0.95 rg
+50 742 Td
+(Test Report) Tj
+ET
+BT
+/F1 9 Tf
+0.4 0.45 0.53 rg
+50 706 Td
+(URL: https://www.demoblaze.com/index.html#) Tj
+ET
+BT
+/F1 9 Tf
+0.4 0.45 0.53 rg
+50 693 Td
+(Generated: 3/4/2026, 2:42:28 PM) Tj
+ET
+BT
+/F1 9 Tf
+0.35 0.4 0.48 rg
+50 670 Td
+(Windows 10/11  |  Chrome 145.0  |  04/03/2026, 14:42:28) Tj
+ET
+BT
+/F1 12 Tf
+0.12 0.16 0.24 rg
+50 647 Td
+(SUMMARY) Tj
+ET
+BT
+/F1 11 Tf
+0.2 0.25 0.35 rg
+50 631 Td
+(Total: 38   |   Passed: 12   |   Failed: 14   |   Warnings: 12) Tj
+ET
+BT
+/F1 11 Tf
+0.12 0.16 0.24 rg
+50 596 Td
+(API/Network Failures \(0 errors, 0 warnings, 1 passed\)) Tj
+ET
+BT
+/F1 9 Tf
+0.13 0.77 0.37 rg
+60 581 Td
+([PASS] All 4 API calls successful) Tj
+ET
+BT
+/F1 11 Tf
+0.12 0.16 0.24 rg
+50 558 Td
+(Button Functionality \(11 errors, 0 warnings, 1 passed\)) Tj
+ET
+BT
+/F1 9 Tf
+0.94 0.27 0.27 rg
+60 543 Td
+([FAIL] Button has no text/label) Tj
+ET
+BT
+/F1 8 Tf
+0.5 0.5 0.5 rg
+70 530 Td
+(button type="button") Tj
+ET
+BT
+/F1 9 Tf
+0.94 0.27 0.27 rg
+60 518 Td
+([FAIL] Button has no text/label) Tj
+ET
+BT
+/F1 8 Tf
+0.5 0.5 0.5 rg
+70 505 Td
+(button type="submit") Tj
+ET
+BT
+/F1 9 Tf
+0.94 0.27 0.27 rg
+60 493 Td
+([FAIL] Button has no text/label) Tj
+ET
+BT
+/F1 8 Tf
+0.5 0.5 0.5 rg
+70 480 Td
+(button type="submit") Tj
+ET
+BT
+/F1 9 Tf
+0.94 0.27 0.27 rg
+60 468 Td
+([FAIL] Button has no text/label) Tj
+ET
+BT
+/F1 8 Tf
+0.5 0.5 0.5 rg
+70 455 Td
+(button type="submit") Tj
+ET
+BT
+/F1 9 Tf
+0.94 0.27 0.27 rg
+60 443 Td
+([FAIL] Button has no text/label) Tj
+ET
+BT
+/F1 8 Tf
+0.5 0.5 0.5 rg
+70 430 Td
+(button type="button") Tj
+ET
+BT
+/F1 9 Tf
+0.94 0.27 0.27 rg
+60 418 Td
+([FAIL] Button has no text/label) Tj
+ET
+BT
+/F1 8 Tf
+0.5 0.5 0.5 rg
+70 405 Td
+(button type="button") Tj
+ET
+BT
+/F1 9 Tf
+0.94 0.27 0.27 rg
+60 393 Td
+([FAIL] Button has no text/label) Tj
+ET
+BT
+/F1 8 Tf
+0.5 0.5 0.5 rg
+70 380 Td
+(button #headlessui-popover-button-v-0 type="button") Tj
+ET
+BT
+/F1 9 Tf
+0.94 0.27 0.27 rg
+60 368 Td
+([FAIL] Button has no text/label) Tj
+ET
+BT
+/F1 8 Tf
+0.5 0.5 0.5 rg
+70 355 Td
+(button type="button") Tj
+ET
+BT
+/F1 9 Tf
+0.94 0.27 0.27 rg
+60 343 Td
+([FAIL] Button has no text/label) Tj
+ET
+BT
+/F1 8 Tf
+0.5 0.5 0.5 rg
+70 330 Td
+(button type="button") Tj
+ET
+BT
+/F1 9 Tf
+0.94 0.27 0.27 rg
+60 318 Td
+([FAIL] Button has no text/label) Tj
+ET
+BT
+/F1 8 Tf
+0.5 0.5 0.5 rg
+70 305 Td
+(button #headlessui-popover-button-v-5 type="button") Tj
+ET
+BT
+/F1 9 Tf
+0.94 0.27 0.27 rg
+60 293 Td
+([FAIL] 70 buttons without labels) Tj
+ET
+BT
+/F1 9 Tf
+0.13 0.77 0.37 rg
+60 280 Td
+([PASS] 78 clickable buttons found) Tj
+ET
+BT
+/F1 11 Tf
+0.12 0.16 0.24 rg
+50 257 Td
+(Checkboxes & Radio \(0 errors, 0 warnings, 1 passed\)) Tj
+ET
+BT
+/F1 9 Tf
+0.13 0.77 0.37 rg
+60 242 Td
+([PASS] All 1 checkboxes/radio buttons have labels) Tj
+ET
+BT
+/F1 11 Tf
+0.12 0.16 0.24 rg
+50 219 Td
+(Date Fields \(0 errors, 0 warnings, 0 passed, N/A\)) Tj
+ET
+BT
+/F1 9 Tf
+0.58 0.64 0.72 rg
+60 204 Td
+([N/A] N/A - No date fields on page) Tj
+ET
+BT
+/F1 11 Tf
+0.12 0.16 0.24 rg
+50 181 Td
+(Dropdown Fields \(0 errors, 0 warnings, 0 passed, N/A\)) Tj
+ET
+BT
+/F1 9 Tf
+0.58 0.64 0.72 rg
+60 166 Td
+([N/A] N/A - No visible dropdowns on page) Tj
+ET
+BT
+/F1 11 Tf
+0.12 0.16 0.24 rg
+50 143 Td
+(Email Field Validation \(0 errors, 0 warnings, 0 passed, N/A\)) Tj
+ET
+BT
+/F1 9 Tf
+0.58 0.64 0.72 rg
+60 128 Td
+([N/A] N/A - No visible email fields on page) Tj
+ET
+BT
+/F1 11 Tf
+0.12 0.16 0.24 rg
+50 105 Td
+(Error Messages \(0 errors, 0 warnings, 1 passed\)) Tj
+ET
+BT
+/F1 9 Tf
+0.13 0.77 0.37 rg
+60 90 Td
+([PASS] No errors visible) Tj
+ET
+endstream
+endobj
+3 0 obj
+<< /Length 3789 >>
+stream
+BT
+/F1 11 Tf
+0.12 0.16 0.24 rg
+50 742 Td
+(Form Submission \(0 errors, 0 warnings, 1 passed\)) Tj
+ET
+BT
+/F1 9 Tf
+0.13 0.77 0.37 rg
+60 727 Td
+([PASS] Form #1 has submit button) Tj
+ET
+BT
+/F1 8 Tf
+0.5 0.5 0.5 rg
+70 714 Td
+(form #frm name="frm") Tj
+ET
+BT
+/F1 11 Tf
+0.12 0.16 0.24 rg
+50 692 Td
+(Images \(0 errors, 0 warnings, 1 passed\)) Tj
+ET
+BT
+/F1 9 Tf
+0.13 0.77 0.37 rg
+60 677 Td
+([PASS] All 19 visible images loaded) Tj
+ET
+BT
+/F1 11 Tf
+0.12 0.16 0.24 rg
+50 654 Td
+(Input Fields Status \(0 errors, 0 warnings, 1 passed\)) Tj
+ET
+BT
+/F1 9 Tf
+0.13 0.77 0.37 rg
+60 639 Td
+([PASS] All inputs are enabled) Tj
+ET
+BT
+/F1 11 Tf
+0.12 0.16 0.24 rg
+50 616 Td
+(Input Placeholders \(0 errors, 1 warnings, 0 passed\)) Tj
+ET
+BT
+/F1 9 Tf
+0.96 0.62 0.04 rg
+60 601 Td
+([WARNING] Input has no placeholder/label) Tj
+ET
+BT
+/F1 8 Tf
+0.5 0.5 0.5 rg
+70 588 Td
+(textarea #ait_clipboard type="textarea") Tj
+ET
+BT
+/F1 11 Tf
+0.12 0.16 0.24 rg
+50 566 Td
+(Links Check \(1 errors, 0 warnings, 0 passed\)) Tj
+ET
+BT
+/F1 9 Tf
+0.94 0.27 0.27 rg
+60 551 Td
+([FAIL] Link has empty href) Tj
+ET
+BT
+/F1 8 Tf
+0.5 0.5 0.5 rg
+70 538 Td
+(a #cat) Tj
+ET
+BT
+/F1 11 Tf
+0.12 0.16 0.24 rg
+50 516 Td
+(Number Field Validation \(0 errors, 0 warnings, 0 passed, N/A\)) Tj
+ET
+BT
+/F1 9 Tf
+0.58 0.64 0.72 rg
+60 501 Td
+([N/A] N/A - No number fields on page) Tj
+ET
+BT
+/F1 11 Tf
+0.12 0.16 0.24 rg
+50 478 Td
+(Page Loading \(0 errors, 0 warnings, 1 passed\)) Tj
+ET
+BT
+/F1 9 Tf
+0.13 0.77 0.37 rg
+60 463 Td
+([PASS] Page fully loaded) Tj
+ET
+BT
+/F1 11 Tf
+0.12 0.16 0.24 rg
+50 440 Td
+(Password Fields \(0 errors, 0 warnings, 0 passed, N/A\)) Tj
+ET
+BT
+/F1 9 Tf
+0.58 0.64 0.72 rg
+60 425 Td
+([N/A] N/A - No visible password fields on page) Tj
+ET
+BT
+/F1 11 Tf
+0.12 0.16 0.24 rg
+50 402 Td
+(Phone Number Validation \(0 errors, 0 warnings, 0 passed, N/A\)) Tj
+ET
+BT
+/F1 9 Tf
+0.58 0.64 0.72 rg
+60 387 Td
+([N/A] N/A - No phone fields on page) Tj
+ET
+BT
+/F1 11 Tf
+0.12 0.16 0.24 rg
+50 364 Td
+(Required Fields \(0 errors, 0 warnings, 0 passed, N/A\)) Tj
+ET
+BT
+/F1 9 Tf
+0.58 0.64 0.72 rg
+60 349 Td
+([N/A] N/A - No required fields in forms) Tj
+ET
+BT
+/F1 11 Tf
+0.12 0.16 0.24 rg
+50 326 Td
+(Resource Loading \(0 errors, 0 warnings, 1 passed\)) Tj
+ET
+BT
+/F1 9 Tf
+0.13 0.77 0.37 rg
+60 311 Td
+([PASS] All resources loaded successfully) Tj
+ET
+BT
+/F1 11 Tf
+0.12 0.16 0.24 rg
+50 288 Td
+(SEO Meta Tags \(2 errors, 4 warnings, 2 passed, N/A\)) Tj
+ET
+BT
+/F1 9 Tf
+0.96 0.62 0.04 rg
+60 273 Td
+([WARNING] Title is too short \(5 chars\): "STORE") Tj
+ET
+BT
+/F1 9 Tf
+0.94 0.27 0.27 rg
+60 260 Td
+([FAIL] Page is missing <meta name="description"> tag) Tj
+ET
+BT
+/F1 9 Tf
+0.96 0.62 0.04 rg
+60 247 Td
+([WARNING] No <meta name="keywords"> tag found \(optional but recommended\)) Tj
+ET
+BT
+/F1 9 Tf
+0.96 0.62 0.04 rg
+60 234 Td
+([WARNING] No <link rel="canonical"> tag found \(recommended for avoiding duplicate content\)) Tj
+ET
+BT
+/F1 9 Tf
+0.58 0.64 0.72 rg
+60 221 Td
+([N/A] N/A - No hreflang tags found \(only needed for multilingual sites\)) Tj
+ET
+BT
+/F1 9 Tf
+0.96 0.62 0.04 rg
+60 208 Td
+([WARNING] No Open Graph tags found \(recommended for social media sharing\)) Tj
+ET
+BT
+/F1 9 Tf
+0.13 0.77 0.37 rg
+60 195 Td
+([PASS] Viewport meta tag present) Tj
+ET
+BT
+/F1 9 Tf
+0.94 0.27 0.27 rg
+60 182 Td
+([FAIL] Page has no <h1> tag \(important for SEO\)) Tj
+ET
+BT
+/F1 9 Tf
+0.13 0.77 0.37 rg
+60 169 Td
+([PASS] HTML lang attribute set: "en") Tj
+ET
+BT
+/F1 11 Tf
+0.12 0.16 0.24 rg
+50 146 Td
+(Slow Network Requests \(0 errors, 0 warnings, 1 passed\)) Tj
+ET
+BT
+/F1 9 Tf
+0.13 0.77 0.37 rg
+60 131 Td
+([PASS] All requests completed quickly) Tj
+ET
+BT
+/F1 11 Tf
+0.12 0.16 0.24 rg
+50 108 Td
+(Spelling Mistakes \(0 errors, 5 warnings, 0 passed\)) Tj
+ET
+BT
+/F1 9 Tf
+0.96 0.62 0.04 rg
+60 93 Td
+([WARNING] Suspicious word: "ghz" — may be misspelled or informal) Tj
+ET
+BT
+/F1 8 Tf
+0.5 0.5 0.5 rg
+70 80 Td
+(p #article) Tj
+ET
+endstream
+endobj
+4 0 obj
+<< /Length 1348 >>
+stream
+BT
+/F1 9 Tf
+0.96 0.62 0.04 rg
+60 742 Td
+([WARNING] Suspicious word: "mhz" — may be misspelled or informal) Tj
+ET
+BT
+/F1 8 Tf
+0.5 0.5 0.5 rg
+70 729 Td
+(p #article) Tj
+ET
+BT
+/F1 9 Tf
+0.96 0.62 0.04 rg
+60 717 Td
+([WARNING] Suspicious word: "rpm" — may be misspelled or informal) Tj
+ET
+BT
+/F1 8 Tf
+0.5 0.5 0.5 rg
+70 704 Td
+(p #article) Tj
+ET
+BT
+/F1 9 Tf
+0.96 0.62 0.04 rg
+60 692 Td
+([WARNING] Suspicious word: "sdhc" — may be misspelled or informal) Tj
+ET
+BT
+/F1 8 Tf
+0.5 0.5 0.5 rg
+70 679 Td
+(p #article) Tj
+ET
+BT
+/F1 9 Tf
+0.96 0.62 0.04 rg
+60 667 Td
+([WARNING] Suspicious word: "sdxc" — may be misspelled or informal) Tj
+ET
+BT
+/F1 8 Tf
+0.5 0.5 0.5 rg
+70 654 Td
+(p #article) Tj
+ET
+BT
+/F1 11 Tf
+0.12 0.16 0.24 rg
+50 632 Td
+(Text Areas \(0 errors, 2 warnings, 0 passed\)) Tj
+ET
+BT
+/F1 9 Tf
+0.96 0.62 0.04 rg
+60 617 Td
+([WARNING] Text area has no character limit) Tj
+ET
+BT
+/F1 8 Tf
+0.5 0.5 0.5 rg
+70 604 Td
+(textarea #ask name="ask" placeholder="Ask me anything..." type="textar) Tj
+ET
+BT
+/F1 9 Tf
+0.96 0.62 0.04 rg
+60 592 Td
+([WARNING] Text area has no character limit) Tj
+ET
+BT
+/F1 8 Tf
+0.5 0.5 0.5 rg
+70 579 Td
+(textarea #ait_clipboard type="textarea") Tj
+ET
+BT
+/F1 9 Tf
+0.5 0.5 0.5 rg
+50 547 Td
+(Note: 3 screenshot\(s\) captured. Export as HTML to view screenshots.) Tj
+ET
+BT
+/F1 8 Tf
+0.6 0.6 0.6 rg
+50 514 Td
+(Generated by Exploratory Tester) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Page /Parent 8 0 R /MediaBox [0 0 612 792] /Contents 2 0 R /Resources << /Font << /F1 1 0 R >> >> >>
+endobj
+6 0 obj
+<< /Type /Page /Parent 8 0 R /MediaBox [0 0 612 792] /Contents 3 0 R /Resources << /Font << /F1 1 0 R >> >> >>
+endobj
+7 0 obj
+<< /Type /Page /Parent 8 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 1 0 R >> >> >>
+endobj
+8 0 obj
+<< /Type /Pages /Kids [5 0 R 6 0 R 7 0 R] /Count 3 >>
+endobj
+9 0 obj
+<< /Type /Catalog /Pages 8 0 R >>
+endobj
+xref
+0 10
+0000000000 65535 f 
+0000000015 00000 n 
+0000000112 00000 n 
+0000003595 00000 n 
+0000007435 00000 n 
+0000008834 00000 n 
+0000008960 00000 n 
+0000009086 00000 n 
+0000009212 00000 n 
+0000009281 00000 n 
+trailer
+<< /Size 10 /Root 9 0 R >>
+startxref
+9330
+%%EOF

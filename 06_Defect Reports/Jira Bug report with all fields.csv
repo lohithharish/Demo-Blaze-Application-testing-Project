@@ -1,0 +1,450 @@
+Summary,Issue key,Issue id,Issue Type,Status,Project key,Project name,Project type,Project lead,Project lead id,Project description,Priority,Resolution,Assignee,Assignee Id,Reporter,Reporter Id,Creator,Creator Id,Created,Updated,Last Viewed,Resolved,Due date,Votes,Labels,Description,Environment,Watchers,Watchers Id,Original estimate,Remaining Estimate,Time Spent,Work Ratio,Σ Original Estimate,Σ Remaining Estimate,Σ Time Spent,Security Level,Attachment,Attachment,Attachment,Custom field (Actual end),Custom field (Actual start),Custom field (Approvals),Custom field (Change reason),Custom field (Change risk),Custom field (Change type),Custom field (Development),Custom field (Epic Color),Custom field (Epic Name),Custom field (Epic Status),Custom field (Goals),Custom field (Impact),Custom field (Issue color),Custom field (Locked forms),Custom field (Rank),Custom field (Request Type),Custom field (Sentiment),Custom field (Start date),Custom field (Story point estimate),Custom field (Submitted forms),Custom field (Target end),Custom field (Target start),Custom field (Team),Custom field (Total forms),Custom field (Vulnerability),Custom field ([CHART] Date of First Response),Custom field ([CHART] Time in Status),Parent,Parent key,Parent summary,Status Category,Status Category Changed
+"Missing ARIA attributes (aria-label, aria-required) on some UI elements affecting accessibility",DBPS-72,10356,Bug,To Do,DBPS,Demo Blaze-Product Store,software,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,Low,,,,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,17-03-2026 09:30,17-03-2026 09:30,,,,0,CrossBrowser,"During accessibility testing, several ARIA attributes were verified across different browsers.
+
+Bootstrap modal components correctly implement role='dialog' and aria-labelledby attributes. The navbar toggle button also uses aria-expanded correctly.
+
+However, some elements lack required ARIA attributes. Carousel navigation controls do not contain aria-label attributes, and form fields do not include aria-required attributes.
+
+Although ARIA attributes function correctly where implemented, these missing attributes reduce accessibility support for users relying on assistive technologies.
+
+
+
+# Open the website in any browser
+# Inspect carousel controls and form fields
+# Check ARIA attributes using browser developer tools
+# Observe missing aria-label and aria-required attributes","Browsers: Chrome, Firefox, Safari, Edge
+Application: Demoblaze Website
+Module: Accessibility / UI",Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@321a819,,,,,,,,,,dark_blue,,0|i000gn:,,,,,,,,,,,,,10298,DBPS-59,Cross Browser Functionality,To Do,17-03-2026 09:30
+Missing aria-label attributes for some UI elements affecting screen reader accessibility,DBPS-71,10354,Bug,To Do,DBPS,Demo Blaze-Product Store,software,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,Low,,,,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,17-03-2026 09:26,17-03-2026 09:26,,,,0,CrossBrowser,"During accessibility testing with screen readers across multiple browsers, some page elements are correctly announced, including navigation links, buttons, and modal dialogs.
+
+However, certain UI components such as carousel controls and category links do not have aria-label attributes. Because of this, screen readers cannot clearly announce the purpose of these elements.
+
+This results in partial accessibility support for users relying on screen readers.
+
+
+
+# Open the website in Firefox with NVDA enabled
+# Navigate through the homepage using keyboard navigation
+# Move focus to carousel controls and category links
+# Observe screen reader announcements","Browsers: Firefox, Chrome, Safari
+Screen Readers: NVDA, JAWS, VoiceOver
+Application: Demoblaze Website
+Module: Accessibility / UI",Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@7ff27b09,,,,,,,,,,dark_blue,,0|i000gf:,,,,,,,,,,,,,10298,DBPS-59,Cross Browser Functionality,To Do,17-03-2026 09:26
+Console warning across browsers due to deprecated jQuery .size() method in Bootstrap 3,DBPS-70,10352,Bug,To Do,DBPS,Demo Blaze-Product Store,software,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,Highest,,,,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,17-03-2026 09:25,17-03-2026 09:25,,,,0,CrossBrowser,"While testing the application across multiple browsers, a consistent console warning is observed.
+
+The warning indicates that the jQuery .size() method is deprecated. This method is being called by Bootstrap 3 JavaScript code.
+
+Although the application functions correctly and no critical JavaScript runtime errors occur, deprecated methods may cause compatibility issues in future browser or library updates.
+
+
+
+# Open the website in any browser
+# Open Developer Tools
+# Navigate to the Console tab
+# Refresh or interact with the application
+# Observe the console warnings","Browsers: Chrome, Firefox, Edge, Safari
+Application: Demoblaze Website
+Module: Global / JavaScript",Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@3121667e,,,,,,,,,,dark_blue,,0|i000g7:,,,,,,,,,,,,,10298,DBPS-59,Cross Browser Functionality,To Do,17-03-2026 09:25
+Cart table overflows screen and requires horizontal scrolling on Android Chrome,DBPS-69,10350,Bug,To Do,DBPS,Demo Blaze-Product Store,software,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,Highest,,,,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,17-03-2026 09:23,17-03-2026 09:23,,,,0,CrossBrowser,"The cart page loads correctly on Android Chrome and displays items in a table.
+The delete button and ""Place Order"" button are accessible and functional.
+
+However, the cart table layout is not responsive for narrow mobile screens.
+The table exceeds the screen width and requires horizontal scrolling to view all columns.
+
+This is the same UI overflow issue observed on iOS devices.
+
+
+
+# Open the website in Android Chrome
+# Add any product to the cart
+# Navigate to the Cart page
+# Observe the cart table layout","Device: Android Phone
+OS: Android
+Browser: Chrome
+Application: Demoblaze Website
+Module: Cart",Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@9c32a3f,,,,,,,,,,dark_blue,,0|i000fz:,,,,,,,,,,,,,10298,DBPS-59,Cross Browser Functionality,To Do,17-03-2026 09:23
+Incorrect keyboard type triggered for form fields on Android Chrome,DBPS-68,10348,Bug,To Do,DBPS,Demo Blaze-Product Store,software,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,Highest,,,,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,17-03-2026 09:21,17-03-2026 09:21,,,,0,CrossBrowser,"Forms on Android Chrome are accessible and all fields are tappable.
+The keyboard appears correctly and the page scrolls automatically to keep the active field visible.
+
+However, the correct keyboard type is not triggered based on the input field type.
+Email fields and numeric fields display the standard keyboard instead of email or numeric keyboards.
+
+The ""Go"" button successfully submits login and signup forms.
+
+This appears to be an application-level issue affecting keyboard input configuration.
+
+
+
+# Open the website in Android Chrome
+# Navigate to Login / Signup / Contact / Place Order forms
+# Tap on email or numeric input fields
+# Observe the keyboard layout","Device: Android Phone
+OS: Android
+Browser: Chrome
+Application: Demoblaze Website
+Module: Forms (Login, Signup, Contact, Place Order)
+Keyboard: GBoard",Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@cb364d1,,,,,,,,,,dark_purple,,0|i000fr:,,,,,,,,,,,,,10298,DBPS-59,Cross Browser Functionality,To Do,17-03-2026 09:21
+Hero slider swipe gesture not working on Android Chrome,DBPS-67,10346,Bug,To Do,DBPS,Demo Blaze-Product Store,software,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,Highest,,,,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,17-03-2026 09:19,17-03-2026 09:19,,,,0,CrossBrowser,"The hero slider loads correctly on Android Chrome.
+Autoplay functionality works and arrow buttons allow navigation between slides.
+
+However, swipe gestures do not move the slider. When the user attempts to swipe left or right, the slide does not change.
+
+This appears to be due to the Bootstrap 3 carousel limitation, which does not provide native swipe support on mobile devices.
+
+
+
+# Open the website in Android Chrome
+# Navigate to the homepage
+# Locate the hero slider
+# Swipe left or right on the slider","Device: Android Phone
+OS: Android
+Browser: Chrome
+Application: Demoblaze Website
+Module: Hero Slider",Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@57948442,,,,,,,,,,dark_blue,,0|i000fj:,,,,,,,,,,,,,10298,DBPS-59,Cross Browser Functionality,To Do,17-03-2026 09:19
+Cart table requires horizontal scrolling on iOS Safari (not mobile responsive),DBPS-66,10344,Bug,To Do,DBPS,Demo Blaze-Product Store,software,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,Highest,,,,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,17-03-2026 09:16,17-03-2026 09:31,,,,0,CrossBrowser,"The cart page loads successfully on iOS Safari and displays the items in a table format.
+The delete button and ""Place Order"" button are accessible and functional.
+
+However, the cart table is not optimized for narrow mobile screens.
+The table overflows the screen width and requires horizontal scrolling to view all columns.
+
+This affects usability on mobile devices.
+
+
+
+# Open the website in iPhone Safari
+# Add a product to the cart
+# Navigate to the Cart page
+# Observe the cart table layout","Device: iPhone
+OS: iOS
+Browser: Safari
+Application: Demoblaze Website
+Module: Cart",Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@5c3b8fb,,,,,,,,,,orange,,0|i000fb:,,,,,,,,,,,,,10298,DBPS-59,Cross Browser Functionality,To Do,17-03-2026 09:16
+Incorrect virtual keyboard type triggered for form fields on iOS Safari,DBPS-65,10342,Bug,To Do,DBPS,Demo Blaze-Product Store,software,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,Highest,,,,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,17-03-2026 09:13,17-03-2026 09:13,,,,0,CrossBrowser,"Forms on the website (Login, Signup, Contact, and Place Order) are accessible and all fields are tappable on iOS Safari. The virtual keyboard appears correctly and the page scrolls to keep the input field visible.
+
+However, the correct keyboard type is not triggered based on the input field type. For example, email fields do not show the email keyboard and numeric fields do not trigger the numeric keypad. Instead, the standard QWERTY keyboard appears for all input fields.
+
+This appears to be an application-level issue rather than an iOS-specific issue.
+
+
+
+# Open the website in iPhone Safari
+# Navigate to Login / Signup / Contact / Place Order form
+# Tap on email or numeric input fields
+# Observe the keyboard layout","Device: iPhone
+OS: iOS
+Browser: Safari
+Application: Demoblaze Website",Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@2d976e16,,,,,,,,,,purple,,0|i000f3:,,,,,,,,,,,,,10298,DBPS-59,Cross Browser Functionality,To Do,17-03-2026 09:13
+Hero slider swipe gesture not working on iOS Safari,DBPS-64,10340,Bug,To Do,DBPS,Demo Blaze-Product Store,software,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,Highest,,,,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,17-03-2026 09:10,17-03-2026 09:10,,,,0,CrossBrowser,"The hero slider on the homepage does not respond to swipe gestures on iOS Safari.
+
+The slider loads correctly and auto-plays, and the arrow buttons work when tapped. However, when the user attempts to swipe left or right on the slider using touch gestures, the slides do not change.
+
+This issue affects usability for mobile users.
+
+
+
+# Open the website in iPhone Safari
+# Navigate to the homepage
+# Locate the hero slider
+# Try swiping left or right on the slider","Device: iPhone 13
+OS: iOS 17
+Browser: Safari
+Application URL: [https://www.demoblaze.com|https://www.demoblaze.com|smart-link] 
+Build Version: v1.0",Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@2fd6c790,,,,,,,,,,dark_grey,,0|i000ev:,,,,,,,,,,,,,10298,DBPS-59,Cross Browser Functionality,To Do,17-03-2026 09:10
+All Form Validation error in Edge Browser,DBPS-63,10306,Bug,To Do,DBPS,Demo Blaze-Product Store,software,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,High,,,,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,16-03-2026 23:46,16-03-2026 23:46,,,,0,CrossBrowser,"|Form validation on Edge: same application-level gaps as all other browsers — only Name validated on Place Order; not a browser-specific issue|
+
+|# Test validation|",Edge,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@56405914,,,,,,,,,,blue,,0|i000en:,,,,,,,,,,,,,10298,DBPS-59,Cross Browser Functionality,To Do,16-03-2026 23:46
+All Form Validation error in Safari Browser,DBPS-62,10304,Bug,To Do,DBPS,Demo Blaze-Product Store,software,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,High,,,,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,16-03-2026 23:44,16-03-2026 23:44,,,,0,CrossBrowser,"|Form validation on Safari: same application-level validation gaps as Chrome and Firefox — only Name validated; no browser-specific validation differences|
+
+|# Test form validation|",Safari,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@3a151069,,,,,,,,,,blue,,0|i000ef:,,,,,,,,,,,,,10298,DBPS-59,Cross Browser Functionality,To Do,16-03-2026 23:44
+All Form Validation error in FireFox Browser,DBPS-61,10302,Bug,To Do,DBPS,Demo Blaze-Product Store,software,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,Highest,,,,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,16-03-2026 23:43,16-03-2026 23:43,,,,0,CrossBrowser,"|Form validation on Firefox: same incomplete validation as Chrome — only Name field validated on Place Order; Country/City/Month/Year accept blank values; this is an application-level bug not browser-specific|
+
+|# Test forms with invalid data
+# Check validation|",FireFox,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@1c15ca2f,,,,,,,,,,green,,0|i000e7:,,,,,,,,,,,,,10298,DBPS-59,Cross Browser Functionality,To Do,16-03-2026 23:43
+All Form Validation error in Chrome Browser,DBPS-60,10300,Bug,To Do,DBPS,Demo Blaze-Product Store,software,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,Highest,,,,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,16-03-2026 23:41,16-03-2026 23:41,,,,0,CrossBrowser,"|Form validation on Chrome: Name-only check on Place Order (blank Name shows browser alert); Login/Signup show alerts for missing/wrong credentials; Country, City, Month, Year accept any input including blanks — incomplete validation is a known bug consistent across all browsers|
+
+|# Test all forms with invalid data
+# Check error messages|",Chrome,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,,,,,,,,16/Mar/26 11:40 PM;af9b6db3-bab7-4119-bd80-b64f520e62db;image-20260316-181029.png;https://lohithharishmaney.atlassian.net/rest/api/3/attachment/content/10184,16/Mar/26 11:40 PM;af9b6db3-bab7-4119-bd80-b64f520e62db;image-20260316-181050.png;https://lohithharishmaney.atlassian.net/rest/api/3/attachment/content/10185,16/Mar/26 11:41 PM;af9b6db3-bab7-4119-bd80-b64f520e62db;image-20260316-181115.png;https://lohithharishmaney.atlassian.net/rest/api/3/attachment/content/10186,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@54d56def,,,,,,,,,,dark_grey,,0|i000dz:,,,,,,,,,,,,,10298,DBPS-59,Cross Browser Functionality,To Do,16-03-2026 23:41
+Cross Browser Functionality,DBPS-59,10298,Epic,To Do,DBPS,Demo Blaze-Product Store,software,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,Medium,,,,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,16-03-2026 23:36,17-03-2026 09:16,17-03-2026 09:16,,,0,,,,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@675c60e7,,,,,ghx-label-3,,,,,yellow,,0|i000dr:,,,,,,,,,,,,,,,,To Do,16-03-2026 23:36
+user gets no indication that submission is failed when the server is down,DBPS-58,10265,Bug,To Do,DBPS,Demo Blaze-Product Store,software,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,High,,,,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,16-03-2026 14:21,16-03-2026 14:21,,,,0,Contact,"|Server error scenario (simulated by intercepting network request): when API call fails, no user-facing error message displayed; the modal remains open with no feedback; user has no indication the submission failed — no error handling for server-side failures|
+
+|# Simulate server downtime
+# Fill and submit form
+# Check error handling|","Chrome, Safari, Edge, FireFox",Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@6f4befab,,,,,,,,,,dark_orange,,0|i000dj:,,,,,,,,,,,,,10215,DBPS-33,Contact functionality,To Do,16-03-2026 14:21
+user sends 5 message rapidly back to back,DBPS-57,10263,Bug,To Do,DBPS,Demo Blaze-Product Store,software,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,High,,,,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,16-03-2026 14:20,16-03-2026 14:20,,,,0,Contact,"|Rapid multiple submissions: clicked 'Send message' 5 times quickly — all 5 submissions processed; received 5 consecutive success alerts; no duplicate prevention or button-disable mechanism; multiple identical messages sent to the server|
+
+|# Fill form
+# Click 'Send message' multiple times rapidly
+# Check behavior|","Chrome, Safari, Edge, FireFox",Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@633ee8ea,,,,,,,,,,dark_orange,,0|i000db:,,,,,,,,,,,,,10215,DBPS-33,Contact functionality,To Do,16-03-2026 14:20
+Reads Trimmed spaces from the user Inputs,DBPS-56,10261,Bug,To Do,DBPS,Demo Blaze-Product Store,software,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,High,,,,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,16-03-2026 14:18,16-03-2026 14:18,,,,0,Contact,"|Leading/trailing whitespace trimming: entered ' [test@example.com|mailto:test@example.com] ' with spaces — NO trimming applied; submitted as-is with surrounding spaces; no input sanitization for whitespace in any field|
+
+|# Enter data with leading/trailing spaces
+# Submit form
+# Check if spaces trimmed|","Chrome, Safari, Edge, FireFox",Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,,,,,,,,16/Mar/26 2:18 PM;af9b6db3-bab7-4119-bd80-b64f520e62db;image-20260316-084842.png;https://lohithharishmaney.atlassian.net/rest/api/3/attachment/content/10148,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@69852344,,,,,,,,,,dark_orange,,0|i000d3:,,,,,,,,,,,,,10215,DBPS-33,Contact functionality,To Do,16-03-2026 14:18
+labels are missing ,DBPS-55,10259,Bug,To Do,DBPS,Demo Blaze-Product Store,software,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,High,,,,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,16-03-2026 14:17,16-03-2026 14:17,,,,0,Contact,"|# Open Contact modal
+# Inspect label elements
+# Check 'for' attribute linking|
+
+|Form labels 'for' attribute association: inspected the HTML — labels use plain text nodes above inputs without <label> elements linked via 'for' attribute to input IDs; clicking label text does NOT focus the associated input field; accessibility association missing|","Chrome, Safari, Edge, FireFox",Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@1c758694,,,,,,,,,,dark_orange,,0|i000cv:,,,,,,,,,,,,,10215,DBPS-33,Contact functionality,To Do,16-03-2026 14:17
+no loading indicates in 3G network,DBPS-54,10257,Bug,To Do,DBPS,Demo Blaze-Product Store,software,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,High,,,,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,16-03-2026 14:12,16-03-2026 14:12,,,,0,Contact,"|Form submission on slow 3G (simulated): submission still completes but takes 3–5 seconds; no loading indicator or spinner shown during wait; no timeout error observed; alert eventually appears; user has no feedback that the request is in-progress|
+
+|# Simulate slow 3G connection
+# Fill and submit form
+# Observe behavior|","Chrome, Safari, Edge, FireFox",Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@77553bc8,,,,,,,,,,dark_orange,,0|i000cn:,,,,,,,,,,,,,10215,DBPS-33,Contact functionality,To Do,16-03-2026 14:12
+No rate limit applied even if the form is submitted continuously 10 times,DBPS-53,10255,Bug,To Do,DBPS,Demo Blaze-Product Store,software,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,High,,,,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,16-03-2026 14:03,16-03-2026 14:03,,,,0,Contact,"|# Submit contact form 10 times rapidly
+# Check if rate limiting applied|
+
+|Rate limiting: submitted the contact form 10 times in rapid succession — all 10 submissions received 'Thanks for the message!!' alerts; no rate limiting, cooldown, or 'too many requests' error enforced; no spam/bot protection (no CAPTCHA or honeypot)|","Chrome, Safari, Edge, FireFox",Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@44224058,,,,,,,,,,dark_orange,,0|i000cf:,,,,,,,,,,,,,10215,DBPS-33,Contact functionality,To Do,16-03-2026 14:03
+Inputs accepts HTML format inputs from users,DBPS-52,10253,Bug,To Do,DBPS,Demo Blaze-Product Store,software,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,Highest,,,,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,16-03-2026 14:01,16-03-2026 14:01,,,,0,Contact,"|# Open Contact modal
+# Enter HTML tags in message
+# Submit form|
+
+|HTML injection test: Message: <b>Bold</b> <img src='x'> — form submits; the success alert displays raw text including the tags without rendering them as HTML in the alert box; input not sanitised but not rendered in the browser context tested|","Chrome, Safari, Edge, FireFox",Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@1f4301cd,,,,,,,,,,dark_orange,,0|i000c7:,,,,,,,,,,,,,10215,DBPS-33,Contact functionality,To Do,16-03-2026 14:01
+CSRF security prevention to be fixed,DBPS-51,10251,Bug,To Do,DBPS,Demo Blaze-Product Store,software,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,Highest,,,,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,16-03-2026 14:01,16-03-2026 14:01,,,,0,Contact,"|CSRF protection: NO CSRF token present in the Contact form or API request; the form submission uses a plain AJAX call with no token; cross-site request forgery is possible — site-wide security vulnerability|
+
+|# Open Contact modal
+# Check form for CSRF token
+# Submit form
+# Verify token validation|","Chrome, Safari, Edge, FireFox",Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@1b2aab7e,,,,,,,,,,dark_orange,,0|i000bz:,,,,,,,,,,,,,10215,DBPS-33,Contact functionality,To Do,16-03-2026 14:01
+inputs accepts SQL injection,DBPS-50,10249,Bug,To Do,DBPS,Demo Blaze-Product Store,software,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,Highest,,,,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,16-03-2026 13:59,16-03-2026 13:59,,,,0,Contact,"|# Open Contact modal
+# Enter HTML tags in message
+# Submit form|
+
+|HTML injection test: Message: <b>Bold</b> <img src='x'> — form submits; the success alert displays raw text including the tags without rendering them as HTML in the alert box; input not sanitised but not rendered in the browser context tested|","Chrome, Safari, Edge, FireFox",Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@4ed249cd,,,,,,,,,,dark_orange,,0|i000br:,,,,,,,,,,,,,10215,DBPS-33,Contact functionality,To Do,16-03-2026 13:59
+prevent from xss message for security purpose,DBPS-49,10247,Bug,To Do,DBPS,Demo Blaze-Product Store,software,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,Highest,,,,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,16-03-2026 13:57,16-03-2026 13:57,,,,0,Contact,"|XSS test: entered <script>alert('XSS')</script> in message field — form accepted and submitted; the script was NOT executed in the browser; API receives the raw string; the success alert showed the plain text response without script execution — partial output encoding, but input is NOT sanitised server-side (stored as-is)|
+
+|# Open Contact modal
+# Enter XSS script in message
+# Submit form|","Chrome, Safari, Edge, FireFox",Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@676feab5,,,,,,,,,,dark_orange,,0|i000bj:,,,,,,,,,,,,,10215,DBPS-33,Contact functionality,To Do,16-03-2026 13:57
+No error message even when the data filled with invalid,DBPS-48,10245,Bug,To Do,DBPS,Demo Blaze-Product Store,software,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,Highest,,,,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,16-03-2026 13:55,16-03-2026 13:55,,,,0,Contact,"|Error message format: NO error messages are displayed for any invalid input scenario — the form has zero client-side validation; there are no red highlights, inline error labels, or warning icons on any field under any condition|
+
+|# Open Contact modal
+# Submit with invalid data
+# Check error message format|","Chrome, Safari, Edge, FireFox",Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@46541c7e,,,,,,,,,,dark_orange,,0|i000bb:,,,,,,,,,,,,,10215,DBPS-33,Contact functionality,To Do,16-03-2026 13:55
+user should get message is processing after clicking submit so that it should not be duplicate,DBPS-47,10243,Bug,To Do,DBPS,Demo Blaze-Product Store,software,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,Highest,,,,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,16-03-2026 13:54,16-03-2026 13:54,,,,0,Contact,"|'Send message' button is NOT disabled during form submission — clicking multiple times rapidly sends multiple identical messages; no loading state, spinner, or button-disable during API call; double-submission vulnerability present|
+
+|# Open Contact modal
+# Fill valid data
+# Click 'Send message'
+# Observe button state|","Chrome, Safari, Edge, FireFox",Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@308a3668,,,,,,,,,,dark_orange,,0|i000b3:,,,,,,,,,,,,,10215,DBPS-33,Contact functionality,To Do,16-03-2026 13:54
+No place holder text in any fields,DBPS-46,10241,Bug,To Do,DBPS,Demo Blaze-Product Store,software,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,Lowest,,,,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,16-03-2026 13:51,16-03-2026 13:51,,,,0,Contact,"|No placeholder text in any field — Contact Email, Contact Name, and Message fields are blank by default with no placeholder hint text; only the label above each field indicates the field purpose|
+
+|# Open Contact modal
+# Check each field for placeholder
+# Verify placeholder text|","Chrome, Safari, Edge, FireFox",Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@565b7beb,,,,,,,,,,dark_orange,,0|i000av:,,,,,,,,,,,,,10215,DBPS-33,Contact functionality,To Do,16-03-2026 13:51
+gets submitted only when name field is filled,DBPS-45,10239,Bug,To Do,DBPS,Demo Blaze-Product Store,software,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,High,,,,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,16-03-2026 13:50,16-03-2026 13:50,,,,0,Contact,"|Submitted with only name filled (John Doe), email and message empty — form submits without error; success alert shown; no validation to require email or message|
+
+|# Open Contact modal
+# Enter only name
+# Leave email and message empty
+# Submit|","Chrome, Safari, Edge, FireFox",Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,,,,,,,,16/Mar/26 1:50 PM;af9b6db3-bab7-4119-bd80-b64f520e62db;image-20260316-081956.png;https://lohithharishmaney.atlassian.net/rest/api/3/attachment/content/10146,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@23bcb336,,,,,,,,,,dark_orange,,0|i000an:,,,,,,,,,,,,,10215,DBPS-33,Contact functionality,To Do,16-03-2026 13:50
+Gets submitted only when email field is there,DBPS-44,10237,Bug,To Do,DBPS,Demo Blaze-Product Store,software,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,High,,,,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,16-03-2026 13:48,16-03-2026 13:48,,,,0,Contact,"|Submitted with only email filled ([test@example.com|mailto:test@example.com]), name and message empty — form submits without error; success alert shown; no validation to require name or message when only email provided|
+
+|# Open Contact modal
+# Enter only email
+# Leave name and message empty
+# Submit|","Chrome, Safari, Edge, FireFox",Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,,,,,,,,16/Mar/26 1:48 PM;af9b6db3-bab7-4119-bd80-b64f520e62db;image-20260316-081800.png;https://lohithharishmaney.atlassian.net/rest/api/3/attachment/content/10144,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@28a85b8a,,,,,,,,,,dark_orange,,0|i000af:,,,,,,,,,,,,,10215,DBPS-33,Contact functionality,To Do,16-03-2026 13:48
+Gets submited when all the fields are empty,DBPS-43,10235,Bug,To Do,DBPS,Demo Blaze-Product Store,software,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,High,,,,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,16-03-2026 13:46,16-03-2026 13:46,,,,0,Contact,"|Clicked 'Send message' with all three fields completely empty — NO validation error shown for any field; form submits with all empty values; 'Thanks for the message!!' alert displayed — critical: no required field validation implemented anywhere|
+
+|# Open Contact modal
+# Leave all fields blank
+# Click 'Send message'|","Chrome, Safari, Edge, FireFox",Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,,,,,,,,16/Mar/26 1:46 PM;af9b6db3-bab7-4119-bd80-b64f520e62db;image-20260316-081557.png;https://lohithharishmaney.atlassian.net/rest/api/3/attachment/content/10142,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@1bfe6ad9,,,,,,,,,,dark_orange,,0|i000a7:,,,,,,,,,,,,,10215,DBPS-33,Contact functionality,To Do,16-03-2026 13:46
+Submits when message field is having only spaces,DBPS-42,10233,Bug,To Do,DBPS,Demo Blaze-Product Store,software,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,High,,,,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,16-03-2026 13:44,16-03-2026 13:44,,,,0,Contact,"|# Open Contact modal
+# Fill email and name
+# Enter only spaces in message
+# Submit|
+
+|Submitted with message containing only spaces '     ' — NO error; whitespace-only message accepted and submitted; no trimming or empty-check validation on message field|","Chrome, Safari, Edge, FireFox",Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@1677ce6e,,,,,,,,,,dark_orange,,0|i0009z:,,,,,,,,,,,,,10215,DBPS-33,Contact functionality,To Do,16-03-2026 13:44
+Submits when message field is empty,DBPS-41,10231,Bug,To Do,DBPS,Demo Blaze-Product Store,software,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,High,,,,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,16-03-2026 13:43,16-03-2026 13:43,,,,0,Contact,"|Submitted with empty message field (Email: [test@example.com|mailto:test@example.com], Name: John Doe) — NO validation error; empty message accepted and submitted; success alert shown — missing required message validation|
+
+|# Open Contact modal
+# Enter valid email and name
+# Leave message field blank
+# Submit|","Chrome, Safari, Edge, FireFox",Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@10b84715,,,,,,,,,,dark_orange,,0|i0009r:,,,,,,,,,,,,,10215,DBPS-33,Contact functionality,To Do,16-03-2026 13:43
+Accepts when only name field is filled with spaces,DBPS-40,10229,Bug,To Do,DBPS,Demo Blaze-Product Store,software,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,High,,,,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,16-03-2026 13:41,16-03-2026 13:41,,,,0,Contact,"|# Open Contact modal
+# Fill email
+# Enter only spaces in name
+# Fill message
+# Submit|
+
+|Submitted with name containing only spaces '     ' — NO error; whitespace-only name accepted and submitted without validation; success alert shown — no whitespace trimming or required field check|","Chrome, Safari, Edge, FireFox",Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@7a263a83,,,,,,,,,,dark_orange,,0|i0009j:,,,,,,,,,,,,,10215,DBPS-33,Contact functionality,To Do,16-03-2026 13:41
+Contact gets submit when name field is empty,DBPS-39,10227,Bug,To Do,DBPS,Demo Blaze-Product Store,software,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,High,,,,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,16-03-2026 13:17,16-03-2026 13:17,,,,0,Contact,"|Submitted with empty name field (Email: [test@example.com|mailto:test@example.com], Message: Test) — NO validation error; empty name accepted; 'Thanks for the message!!' shown — missing required name validation|
+
+|# Open Contact modal
+# Enter valid email
+# Leave name field blank
+# Enter message
+# Submit|","Chrome, Safari, Edge, FireFox",Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,,,,,,,,16/Mar/26 1:17 PM;af9b6db3-bab7-4119-bd80-b64f520e62db;image-20260316-074708.png;https://lohithharishmaney.atlassian.net/rest/api/3/attachment/content/10140,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@1cbc9176,,,,,,,,,,dark_orange,,0|i0009b:,,,,,,,,,,,,,10215,DBPS-33,Contact functionality,To Do,16-03-2026 13:17
+Email field accepts only spaces,DBPS-38,10225,Bug,To Do,DBPS,Demo Blaze-Product Store,software,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,High,,,,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,16-03-2026 13:15,16-03-2026 13:15,,,,0,Contact,"|Submitted with email containing only spaces '     ' — NO error shown; whitespace-only email accepted as valid input; form submits and shows success alert — no whitespace trimming or validation|
+
+|# Open Contact modal
+# Enter only spaces in email field
+# Fill other fields
+# Submit|","Chrome, Safari, Edge, FireFox",Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,,,,,,,,16/Mar/26 1:15 PM;af9b6db3-bab7-4119-bd80-b64f520e62db;Screenshot 2026-03-16 130031.png;https://lohithharishmaney.atlassian.net/rest/api/3/attachment/content/10138,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@2ba32229,,,,,,,,,,dark_orange,,0|i00093:,,,,,,,,,,,,,10215,DBPS-33,Contact functionality,To Do,16-03-2026 13:15
+Email field accepts spaces,DBPS-37,10223,Bug,To Do,DBPS,Demo Blaze-Product Store,software,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,High,,,,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,16-03-2026 13:14,16-03-2026 13:14,,,,0,Contact,"|Submitted with email containing spaces 'test [user@example.com|mailto:user@example.com]' — NO error shown; email with spaces is accepted and submitted; no whitespace validation on email field|
+
+|# Open Contact modal
+# Enter email with spaces
+# Fill other fields
+# Submit|","Chrome, Safari, Edge, FireFox",Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,,,,,,,,16/Mar/26 1:13 PM;af9b6db3-bab7-4119-bd80-b64f520e62db;image-20260316-074351.png;https://lohithharishmaney.atlassian.net/rest/api/3/attachment/content/10136,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@54f3c08,,,,,,,,,,dark_orange,,0|i0008v:,,,,,,,,,,,,,10215,DBPS-33,Contact functionality,To Do,16-03-2026 13:14
+Email field accepts no domain '.com' field in input,DBPS-36,10221,Bug,To Do,DBPS,Demo Blaze-Product Store,software,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,High,,,,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,16-03-2026 13:11,16-03-2026 13:11,,,,0,Contact,"|Submitted with email 'test@' (no domain) — NO validation error; form accepts 'test@' as a valid email and submits; alert shown — missing domain validation|
+
+|# Open Contact modal
+# Enter email without domain
+# Fill other fields
+# Submit|","Chrome, Safari, Edge, FireFox",Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,,,,,,,,16/Mar/26 1:11 PM;af9b6db3-bab7-4119-bd80-b64f520e62db;image-20260316-074139.png;https://lohithharishmaney.atlassian.net/rest/api/3/attachment/content/10134,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@33faf064,,,,,,,,,,dark_orange,,0|i0008n:,,,,,,,,,,,,,10215,DBPS-33,Contact functionality,To Do,16-03-2026 13:11
+Email field accepts without '@' sign,DBPS-35,10219,Bug,To Do,DBPS,Demo Blaze-Product Store,software,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,High,,,,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,16-03-2026 13:08,16-03-2026 13:08,,,,0,Contact,"|Submitted with invalid email '[invalidemail.com|http://invalidemail.com]' (no @ symbol) — NO error message displayed; form accepts and submits the invalid email; 'Thanks for the message!!' alert shown — email format validation absent|
+
+|Email: [invalidemail.com|http://invalidemail.com]
+Name: John Doe
+Message: Test message|","Chrome, Safari, Edge, FireFox",Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,,,,,,,,16/Mar/26 1:08 PM;af9b6db3-bab7-4119-bd80-b64f520e62db;image-20260316-073821.png;https://lohithharishmaney.atlassian.net/rest/api/3/attachment/content/10132,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@5f3cef21,,,,,,,,,,dark_orange,,0|i0008f:,,,,,,,,,,,,,10215,DBPS-33,Contact functionality,To Do,16-03-2026 13:08
+Message is being sent without mail id,DBPS-34,10217,Bug,To Do,DBPS,Demo Blaze-Product Store,software,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,High,,,,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,16-03-2026 13:05,16-03-2026 13:05,,,,0,Contact,"|Submitted with empty email field (Name: John Doe, Message: Test message) — NO validation error shown; form submits and 'Thanks for the message!!' alert appears; empty email is accepted — missing required field validation|
+
+|Email: [Empty]
+Name: John Doe
+Message: Test message|","Chrome, Safari, Edge, Firefox",Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,,,,,,,,16/Mar/26 1:05 PM;af9b6db3-bab7-4119-bd80-b64f520e62db;image-20260316-073535.png;https://lohithharishmaney.atlassian.net/rest/api/3/attachment/content/10130,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@73d62a0,,,,,,,,,,dark_blue,,0|i00087:,,,,,,,,,,,,,10215,DBPS-33,Contact functionality,To Do,16-03-2026 13:05
+Contact functionality,DBPS-33,10215,Epic,To Do,DBPS,Demo Blaze-Product Store,software,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,Medium,,,,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,16-03-2026 13:03,16-03-2026 14:23,16-03-2026 14:23,,,0,Contact,,,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@3d95f6af,,,,,ghx-label-6,,,,,green,,0|i0007z:,,,,,,,,,,,,,,,,To Do,16-03-2026 13:03
+User get no feedback option after network fail,DBPS-32,10214,Bug,To Do,DBPS,Demo Blaze-Product Store,software,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,High,,,,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,16-03-2026 11:50,16-03-2026 11:50,,,,0,Cart,"|Loaded cart; disconnected network; clicked 'x' to delete an item; page attempted reload but failed silently; no 'retry' option, no offline/network error message shown; user left with no feedback about the failed network operation|
+
+|# Load cart
+# Disconnect network
+# Try to delete item|","Chrome, Firefox, Safari, Edge",Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@21ca064a,,,,,,,,,,orange,,0|i0007r:,,,,,,,,,,,,,10186,DBPS-18,Cart Functionality,To Do,16-03-2026 11:50
+cart server error no error message showing,DBPS-31,10212,Bug,To Do,DBPS,Demo Blaze-Product Store,software,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,High,,,,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,16-03-2026 11:47,16-03-2026 11:47,,,,0,Cart,"|# Simulate server error
+# Try to load cart|
+
+|Simulated server error by intercepting API response; cart table rendered empty with no items; NO explicit error message displayed to user — silent failure with no feedback or retry option|","Chrome, Safari, Edge, Firefox",Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@4557abc7,,,,,,,,,,orange,,0|i0007j:,,,,,,,,,,,,,10186,DBPS-18,Cart Functionality,To Do,16-03-2026 11:47
+Guest cart items get lost after login,DBPS-30,10210,Bug,To Do,DBPS,Demo Blaze-Product Store,software,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,High,,,,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,16-03-2026 11:45,16-03-2026 11:45,,,,0,Cart,"|# Add products as guest
+# Login
+# Check cart|
+
+|Added 2 products as guest user; then logged in to existing account; after login, cart showed server-side user cart items only — the 2 guest items were NOT merged into the user cart; guest items lost on login; no guest-to-user cart merge implemented|","Chrome, Firefox, Edge, Safari",Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@3378be04,,,,,,,,,,orange,,0|i0007b:,,,,,,,,,,,,,10186,DBPS-18,Cart Functionality,To Do,16-03-2026 11:45
+Small screen scroling is not responsive,DBPS-29,10208,Bug,To Do,DBPS,Demo Blaze-Product Store,software,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,High,,,,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,16-03-2026 11:39,16-03-2026 11:39,,,,0,Cart,"|# Narrow browser window
+# Check cart table|
+
+|On narrow screens below ~600px, cart table requires horizontal scrolling; browser native horizontal scroll available so content is reachable; however no responsive table adaptation (stacking/cards) implemented; content accessible but UX is suboptimal|","Mobile, Chrome",Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@73ce1196,,,,,,,,,,blue,,0|i00073:,,,,,,,,,,,,,10186,DBPS-18,Cart Functionality,To Do,16-03-2026 11:39
+No cart count number in nav bar ,DBPS-28,10206,Bug,To Do,DBPS,Demo Blaze-Product Store,software,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,High,,,,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,16-03-2026 11:28,16-03-2026 11:28,,,,0,Cart,"|Checked navbar 'Cart' link with 3 items in cart; NO cart counter, badge, or item count displayed on Cart link; navbar shows plain text 'Cart' with no quantity indicator; missing cart count badge|
+
+|# Add products to cart
+# Check navigation bar for cart count|","Chrome, Firefox, Safari, Edge",Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@2538bf37,,,,,,,,,,dark_blue,,0|i0006v:,,,,,,,,,,,,,10186,DBPS-18,Cart Functionality,To Do,16-03-2026 11:28
+Even when the cart is empty the user is able to place order,DBPS-27,10204,Bug,To Do,DBPS,Demo Blaze-Product Store,software,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,High,,,,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,16-03-2026 11:25,16-03-2026 11:25,,,,0,Cart,"|# Ensure cart is empty
+# Check button state|
+
+|With empty cart (no items), 'Place Order' button remains ENABLED and clickable — no guard preventing it; clicking opens the Place Order modal with Total showing blank/0; allows placing an order with no items; critical missing empty-cart protection|","Chrome, Firefox, Safari, Edge",Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,,,,,,,,16/Mar/26 11:25 AM;af9b6db3-bab7-4119-bd80-b64f520e62db;image-20260316-055506.png;https://lohithharishmaney.atlassian.net/rest/api/3/attachment/content/10128,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@4cbea54a,,,,,,,,,,dark_purple,,0|i0006n:,,,,,,,,,,,,,10186,DBPS-18,Cart Functionality,To Do,16-03-2026 11:25
+After deleting the product the user can get undo the product back,DBPS-26,10202,Bug,To Do,DBPS,Demo Blaze-Product Store,software,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,Lowest,,,,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,16-03-2026 11:23,16-03-2026 11:23,,,,0,Cart,"|# Delete a product
+# Look for undo option
+# Test undo if available|
+
+|Deleted a product from cart; searched UI for undo option; NO undo button, snackbar, toast, or recovery mechanism exists; deletion is permanent with no way to reverse it|","Chrome, Firefox, Safari, Edge",Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@126b5c6e,,,,,,,,,,teal,,0|i0006f:,,,,,,,,,,,,,10186,DBPS-18,Cart Functionality,To Do,16-03-2026 11:23
+no undo after deleting from the from car no confirmation,DBPS-25,10200,Bug,To Do,DBPS,Demo Blaze-Product Store,software,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,Low,,,,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,16-03-2026 09:48,16-03-2026 09:48,,,,0,Cart,"|Deleted a product from cart; searched UI for undo option; NO undo button, snackbar, toast, or recovery mechanism exists; deletion is permanent with no way to reverse it|
+
+|# Delete a product
+# Look for undo option
+# Test undo if available|","Chrome, Firefox, Safari, Edge",Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@142f02cf,,,,,,,,,,blue,,0|i00067:,,,,,,,,,,,,,10186,DBPS-18,Cart Functionality,To Do,16-03-2026 09:48
+No delete Confirmation after deleting from the cart,DBPS-24,10198,Bug,To Do,DBPS,Demo Blaze-Product Store,software,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,Low,,,,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,16-03-2026 09:35,16-03-2026 09:35,,,,0,Cart,"|Clicked 'x' to delete a product; NO confirmation dialog appeared; product immediately and silently removed with no warning, no 'Are you sure?' prompt, and no undo option; deletion is instant and irreversible|
+
+|# Click 'x' to delete product
+# Check for confirmation dialog|","Chrome, Safari, Edge, Fire",Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,,,,,,,,16/Mar/26 9:34 AM;af9b6db3-bab7-4119-bd80-b64f520e62db;image-20260316-040447.png;https://lohithharishmaney.atlassian.net/rest/api/3/attachment/content/10126,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@46420131,,,,,,,,,,blue,,0|i0005z:,,,,,,,,,,,,,10186,DBPS-18,Cart Functionality,To Do,16-03-2026 09:35
+Total product shows in number format not in currency,DBPS-23,10196,Bug,To Do,DBPS,Demo Blaze-Product Store,software,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,High,,,,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,16-03-2026 09:29,16-03-2026 09:29,,,,0,Cart,"|Total displayed as a plain numeric value without any currency symbol — shows '1830' instead of '$1830'; inconsistent with product detail pages that show '$360'; currency formatting absent from cart total|
+
+|# Add products to cart
+# Check total display format|","Chrome, Firefox, Safari, Edge ",Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,,,,,,,,16/Mar/26 9:29 AM;af9b6db3-bab7-4119-bd80-b64f520e62db;image-20260316-035917.png;https://lohithharishmaney.atlassian.net/rest/api/3/attachment/content/10124,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@37354880,,,,,,,,,,teal,,0|i0005r:,,,,,,,,,,,,,10186,DBPS-18,Cart Functionality,To Do,16-03-2026 09:29
+After adding the product the user can click the product and get back to view details of product,DBPS-22,10194,Bug,To Do,DBPS,Demo Blaze-Product Store,software,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,Low,,,,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,16-03-2026 09:25,16-03-2026 09:25,,,,0,Cart,"|Clicked product title text and product thumbnail image inside cart table; neither are hyperlinks — no navigation to product detail page; cart items are non-interactive display-only elements; no back-link to product from cart|
+
+|# Go to cart with products
+# Click product title/image
+# Verify navigation|","Chrome, Firefox, Edge, Safari ",Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,,,,,,,,16/Mar/26 9:24 AM;af9b6db3-bab7-4119-bd80-b64f520e62db;image-20260316-035453.png;https://lohithharishmaney.atlassian.net/rest/api/3/attachment/content/10122,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@7a8607b9,,,,,,,,,,dark_teal,,0|i0005j:,,,,,,,,,,,,,10186,DBPS-18,Cart Functionality,To Do,16-03-2026 09:25
+Same product adding twice shows saperate,DBPS-21,10192,Bug,To Do,DBPS,Demo Blaze-Product Store,software,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,High,,,,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,16-03-2026 09:21,16-03-2026 09:21,,,,0,Cart,"|Added Samsung galaxy s6 to cart twice; resulted in TWO separate identical rows — no quantity column, no quantity merging; product treated as two independent line items; duplicates displayed instead of 'Qty: 2'|
+
+|# Add same product to cart twice
+# Go to cart
+# Observe display|","Chrome, Firefox, Edge, Safari",Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,,,,,,,,16/Mar/26 9:21 AM;af9b6db3-bab7-4119-bd80-b64f520e62db;image-20260316-035138.png;https://lohithharishmaney.atlassian.net/rest/api/3/attachment/content/10120,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@7b0aa91c,,,,,,,,,,green,,0|i0005b:,,,,,,,,,,,,,10186,DBPS-18,Cart Functionality,To Do,16-03-2026 09:21
+Cart displays no currency after adding the product in cart,DBPS-20,10190,Bug,To Do,DBPS,Demo Blaze-Product Store,software,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,High,,,,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,16-03-2026 09:18,16-03-2026 09:18,,,,0,Cart,"|Price for Samsung galaxy s6 displayed as '360' in Price column; value numerically correct but displayed WITHOUT a currency symbol; expected '$360', actual is '360' — currency symbol missing|
+
+|# Add product to cart
+# Go to cart
+# Check price column|","Chrome, FireFox, Edge, Safari",Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,,,,,,,,16/Mar/26 9:18 AM;af9b6db3-bab7-4119-bd80-b64f520e62db;image-20260316-034819.png;https://lohithharishmaney.atlassian.net/rest/api/3/attachment/content/10118,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@3dd21c5b,,,,,,,,,,dark_orange,,0|i00053:,,,,,,,,,,,,,10186,DBPS-18,Cart Functionality,To Do,16-03-2026 09:18
+Cart pages displays nothing when there is nothing,DBPS-19,10188,Bug,To Do,DBPS,Demo Blaze-Product Store,software,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,High,,,,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,16-03-2026 09:13,16-03-2026 09:13,,,,0,Cart,"|# Ensure cart is empty
+# Navigate to cart page
+# Observe display|
+
+|Opened cart with no items added; page loaded the table structure (Pic/Title/Price/x headers visible) but table body was completely empty; NO friendly 'Your cart is empty' message displayed anywhere; Total section showed a blank value — missing empty-state messaging|","Chrome, Firefox, Edge, Safari",Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,,,,,,,,16/Mar/26 9:12 AM;af9b6db3-bab7-4119-bd80-b64f520e62db;image-20260316-034250.png;https://lohithharishmaney.atlassian.net/rest/api/3/attachment/content/10116,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@4425a35a,,,,,,,,,,green,,0|i0004v:,,,,,,,,,,,,,10186,DBPS-18,Cart Functionality,To Do,16-03-2026 09:13
+Cart Functionality,DBPS-18,10186,Epic,To Do,DBPS,Demo Blaze-Product Store,software,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,Medium,,,,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,16-03-2026 09:08,16-03-2026 09:08,,,,0,,,,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@2626830b,,,,,,,,,,,,0|i0004n:,,,,,,,,,,,,,,,,To Do,16-03-2026 09:08
+Video is not related to web-application,DBPS-17,10185,Bug,To Do,DBPS,Demo Blaze-Product Store,software,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,High,,,,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,16-03-2026 09:07,16-03-2026 09:07,,,,0,Aboutus,"|Video is not about the application its about java programming|
+
+|# Play entire video
+# Observe content|","Chrome, Firefox,Safari,Edge",Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@4a8d4323,,,,,,,,,,,,0|i0004f:,,,,,,,,,,,,,10142,DBPS-10,About Us,To Do,16-03-2026 09:07
+Screen Reader option is not visible ,DBPS-16,10183,Bug,To Do,DBPS,Demo Blaze-Product Store,software,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,Low,,,,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,16-03-2026 09:05,16-03-2026 09:05,,,,0,Aboutus,"|Screen reader (VoiceOver on Safari): modal announced as dialog labelled 'About us'; × button announced as 'Close' (aria-label present); static image announced with empty alt text (nothing read — a11y gap); Close button correctly announced; partial screen reader support — image lacks descriptive alt text for screen reader users|
+
+|# Enable screen reader
+# Navigate modal|","Chrome, Safari, Edge, Firefox",Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@f1c6b7f,,,,,,,,,,,,0|i00047:,,,,,,,,,,,,,10142,DBPS-10,About Us,To Do,16-03-2026 09:05
+video playing on 3G,DBPS-15,10181,Bug,To Do,DBPS,Demo Blaze-Product Store,software,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,High,,,,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,16-03-2026 09:03,16-03-2026 09:03,,,,0,Aboutus,"|# Throttle to 3G
+# Play video|
+
+|Video on slow connection not applicable — no video in modal. On simulated Slow 3G, front.jpg loads in ~2–3 s; no loading indicator shown but image file is small enough that delay is minimal. Expected: video plays or shows loading indicator. Actual: no video; static image loads.|","Chrome, Firefox, Safari, Edge",Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@4ff0c6dc,,,,,,,,,,,,0|i0003z:,,,,,,,,,,,,,10142,DBPS-10,About Us,To Do,16-03-2026 09:03
+Video Scale should be 320px But it does not matches,DBPS-14,10179,Bug,To Do,DBPS,Demo Blaze-Product Store,software,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,High,,,,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,16-03-2026 08:10,16-03-2026 08:10,,,,0,Aboutus,"|Video scaling on small screens not applicable — no video in modal. Static image (front.jpg) scales correctly on 320 px width via Bootstrap responsive classes (d-block w-100). Expected: video scales appropriately on small screen. Actual: no video; image scales correctly.|
+
+|# Open on 320px width
+# Play video|","Chrome, Safari, Firefox, Edge",Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@5fba95f0,,,,,,,,,,,,0|i0003r:,,,,,,,,,,,,,10142,DBPS-10,About Us,To Do,16-03-2026 08:10
+Video Does not gets reset even after closing the single modal,DBPS-13,10177,Bug,To Do,DBPS,Demo Blaze-Product Store,software,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,High,,,,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,16-03-2026 08:04,16-03-2026 08:06,16-03-2026 08:06,,,0,Aboutus,"|Video restart on reopen not applicable — no video in modal. Reopening shows the static image in its default display state. No video state to reset. Expected: video resets to beginning on reopen. Actual: no video implemented.|
+
+|# Play video
+# Close modal
+# Reopen|","Chrome, Firefox, Safari, Edge",Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,,,,,,,,16/Mar/26 8:04 AM;af9b6db3-bab7-4119-bd80-b64f520e62db;Video is not reset even after closing this tab.png;https://lohithharishmaney.atlassian.net/rest/api/3/attachment/content/10114,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@53b86591,,,,,,,,,,orange,,0|i0003j:,,,,,,,,,,,,,10142,DBPS-10,About Us,To Do,16-03-2026 08:04
+Icons are not decorative and interactive,DBPS-11,10143,Bug,To Do,DBPS,Demo Blaze-Product Store,software,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,Lowest,,,,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,15-03-2026 23:27,15-03-2026 23:37,15-03-2026 23:41,,,0,Aboutus,"|No decorative icons in About us modal to test interactivity. Modal contains only static promotional image (front.jpg). Expected: non-interactive decorative icons present. Actual: no icons of any type in the modal.|
+
+|# Open modal
+# Try clicking icons|","Chrome, FireFox, Safari, Edge",,,,,,,,,,,15/Mar/26 11:35 PM;af9b6db3-bab7-4119-bd80-b64f520e62db;icons are not decorative and interactive.png;https://lohithharishmaney.atlassian.net/rest/api/3/attachment/content/10080,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@5699812,,,,,,,,,,,,0|i0003b:,,,,,,,,,,,,,10142,DBPS-10,About Us,To Do,15-03-2026 23:27
+About Us,DBPS-10,10142,Epic,To Do,DBPS,Demo Blaze-Product Store,software,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,Medium,,,,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,15-03-2026 23:26,15-03-2026 23:40,16-03-2026 09:07,,,0,Aboutus,"This section is all about About us page , demoblaze application Bugs report",,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@a1d7b3e,,,,,ghx-label-9,,,,,orange,,0|i00033:,,,,,,,,,,,,,,,,To Do,15-03-2026 23:26
+User Authentication ,DBPS-9,10109,Epic,To Do,DBPS,Demo Blaze-Product Store,software,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,Medium,,,,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,14-03-2026 23:35,14-03-2026 23:35,15-03-2026 09:06,,,0,Signup,They are 8 Bugs reported ,,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@baed377,,,,,,,,,,,,0|i0002v:,,,,,,,,,,,,,,,,To Do,14-03-2026 23:35
+signup inputs gets deleted after the refresh,DBPS-8,10076,Bug,To Do,DBPS,Demo Blaze-Product Store,software,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,Low,,,,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,11-03-2026 13:58,14-03-2026 23:39,,,,0,,"|# Click 'Sign up'
+# Enter credentials
+# Refresh page
+# Click 'Sign up' again
+# Submit|
+
+|Username: refreshuser
+Password: Test@123|
+
+|After refresh the whole inputs gets deleted|","Chrome, Firefox, Safari, Edge",Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,,,,,,,,11/Mar/26 1:58 PM;af9b6db3-bab7-4119-bd80-b64f520e62db;image-20260311-082809.png;https://lohithharishmaney.atlassian.net/rest/api/3/attachment/content/10047,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@709f117f,,,,,,,,,,purple,,0|i0000o:,,,,,,,,,,,,,10109,DBPS-9,User Authentication ,To Do,11-03-2026 13:58
+Inputs are taken even if the users are left spaces in username and password inputs,DBPS-7,10075,Bug,To Do,DBPS,Demo Blaze-Product Store,software,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,High,,,,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,11-03-2026 13:55,14-03-2026 23:39,14-03-2026 23:27,,,0,Signup,"|# Click 'Sign up'
+# Enter ' username ' with spaces
+# Enter ' password ' with spaces
+# Submit|
+
+|Username: ' testuser '
+Password: ' Test@123 '|
+
+|It just stores the words that are typed in placeholder where it can be spaces or anything (fail: if today user leaves 5 spaces in front and forgets in future)|","Chrome, Firefox, Safari, Edge",Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,,,,,,,,11/Mar/26 1:55 PM;af9b6db3-bab7-4119-bd80-b64f520e62db;image-20260311-082530.png;https://lohithharishmaney.atlassian.net/rest/api/3/attachment/content/10045,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@165a3f1d,,,,,,,,,,purple,,0|i0000n:i,,,,,,,,,,,,,10109,DBPS-9,User Authentication ,To Do,11-03-2026 13:55
+No-Auto fill in the password field,DBPS-6,10074,Bug,To Do,DBPS,Demo Blaze-Product Store,software,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,Low,,,,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,11-03-2026 13:53,14-03-2026 23:39,14-03-2026 23:27,,,0,Signup,"|# Click 'Sign up'
+# Check if browser auto-fills password|","Chrome, Firefox, Safari, Edge",Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,,,,,,,,11/Mar/26 1:52 PM;af9b6db3-bab7-4119-bd80-b64f520e62db;image-20260311-082249.png;https://lohithharishmaney.atlassian.net/rest/api/3/attachment/content/10043,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@58267f03,,,,,,,,,,purple,,0|i0000n:9,,,,,,,,,,,,,10109,DBPS-9,User Authentication ,To Do,11-03-2026 13:53
+User is able to type XSS script in username field,DBPS-5,10073,Bug,To Do,DBPS,Demo Blaze-Product Store,software,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,High,,,,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,11-03-2026 13:51,14-03-2026 23:39,14-03-2026 23:27,,,0,Signup,"|# Click 'Sign up'
+# Enter XSS script in username
+# Enter valid password
+# Click 'Sign up'|
+
+|Username: <script>alert('XSS')</script>
+Password: Test@123|
+
+This can cause cyber attacks ","Chrome, Firefox, Safari, Edge",Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,,,,,,,,11/Mar/26 1:51 PM;af9b6db3-bab7-4119-bd80-b64f520e62db;image-20260311-082106.png;https://lohithharishmaney.atlassian.net/rest/api/3/attachment/content/10041,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@3352c51,,,,,,,,,,purple,,0|i0000n:4,,,,,,,,,,,,,10109,DBPS-9,User Authentication ,To Do,11-03-2026 13:51
+form labels are not properly displayed,DBPS-4,10040,Bug,To Do,DBPS,Demo Blaze-Product Store,software,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,High,,,,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,11-03-2026 11:10,16-03-2026 12:28,16-03-2026 12:28,,,0,Signup,"|# Click 'Sign up'
+# Verify 'Username:' label
+# Verify 'Password:' label|","Chrome, Firefox, Edge, Safari",Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,,,,,,,,11/Mar/26 11:09 AM;af9b6db3-bab7-4119-bd80-b64f520e62db;Demo Blaze Bug 1.png;https://lohithharishmaney.atlassian.net/rest/api/3/attachment/content/10007,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@453604f8,,,,,,,,,,blue,,0|i0000n:3r,,,,,,,,,,,,,10109,DBPS-9,User Authentication ,To Do,11-03-2026 11:10
+Enter Key does not works to submit,DBPS-3,10039,Bug,To Do,DBPS,Demo Blaze-Product Store,software,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,High,,,,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,11-03-2026 11:02,14-03-2026 23:39,,,,0,,"|# Click 'Sign up'
+# Enter valid credentials
+# Press Enter key|
+
+|Username: testuser
+Password: Test@123|","Chrome, firefox, safari, Edge",Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,,,,,,,,11/Mar/26 11:02 AM;af9b6db3-bab7-4119-bd80-b64f520e62db;image-20260311-053235.png;https://lohithharishmaney.atlassian.net/rest/api/3/attachment/content/10005,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@157155c6,,,,,,,,,,teal,,0|i0000n:3i,,,,,,,,,,,,,10109,DBPS-9,User Authentication ,To Do,11-03-2026 11:02
+Password gets created with spaces considering it as a character,DBPS-2,10038,Bug,To Do,DBPS,Demo Blaze-Product Store,software,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,High,,,,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,11-03-2026 10:43,14-03-2026 23:39,14-03-2026 23:26,,,0,Signup,"|# Click 'Sign up'
+# Enter valid username
+# Enter spaces only in password
+# Click 'Sign up' button|
+
+|Username: testuser
+Password: '     '|","Chrome, Firefox, Safari, Edge",Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,,,,,,,,11/Mar/26 10:42 AM;af9b6db3-bab7-4119-bd80-b64f520e62db;image-20260311-051225.png;https://lohithharishmaney.atlassian.net/rest/api/3/attachment/content/10003,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@35c59810,,,,,,,,,,grey,,0|i0000n:3,,,,,,,,,,,,,10109,DBPS-9,User Authentication ,To Do,11-03-2026 10:43
+Signup account gets created with only spaces,DBPS-1,10037,Bug,To Do,DBPS,Demo Blaze-Product Store,software,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,High,,,,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,11-03-2026 10:40,14-03-2026 23:39,14-03-2026 23:25,,,0,Signup,"|# Click 'Sign up'
+# Enter only spaces in username
+# Enter valid password
+# Click 'Sign up' button|
+
+|Username: '     '
+Password: Pass@123|","Chrome, Edge, Safari, FireFox",Lohith Harish,712020:4bbf117a-f62f-4088-9de8-d6a7f0a15258,,,,,,,,,11/Mar/26 10:40 AM;af9b6db3-bab7-4119-bd80-b64f520e62db;image-20260311-051005.png;https://lohithharishmaney.atlassian.net/rest/api/3/attachment/content/10001,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@7dda0ed,,,,,,,,,,dark_teal,,0|i0000n:2,,,,,,,,,,,,,10109,DBPS-9,User Authentication ,To Do,14-03-2026 23:14
