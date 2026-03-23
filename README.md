@@ -90,7 +90,7 @@ This repository showcases:
 
 | Artifact | Description | Status |
 |---|---|---|
-| `DemoBlaze_Test_Scenarios.xlsx` | Master test scenarios document — 20 scenarios across all modules | ✅ Complete |
+| `DemoBlaze_Test_Scenarios.xlsx` | Master test scenarios document — 18 scenarios across all modules | ✅ Complete |
 | `Signup_Test_Cases.xlsx` | Test cases for user registration module | ✅ Complete |
 | `Login_Test_Cases.xlsx` | Test cases for authentication module | ✅ Complete |
 | `Logout_Test_Cases_Updated.xlsx` | Session termination and redirect validation | ✅ Complete |
@@ -113,9 +113,9 @@ This repository showcases:
 ┌─────────────────────────────────────────────────────────────────┐
 │                    TEST COVERAGE AT A GLANCE                    │
 ├─────────────────────────────┬───────────────────────────────────┤
-│  Total Test Scenarios       │  20 Scenarios                     │
+│  Total Test Scenarios       │  18 Scenarios                     │
 │  Total Test Cases           │  1,000+                           │
-│  Priority P0 Scenarios      │  12 (Critical)                    │
+│  Priority P0 Scenarios      │  10 (Critical)                    │
 │  Priority P1 Scenarios      │  8  (High)                        │
 │  Modules Covered            │  12 Functional Modules            │
 │  Cross-Browser Cases        │  119 Cases (4 Browsers)           │
@@ -260,7 +260,7 @@ New  →  Open  →  In Progress  →  Fixed  →  Retest  →  Closed
 │   └── Exploratory testing session notes and findings
 │
 ├── 📁 03_Test scenario/
-│   └── DemoBlaze_Test_Scenarios.xlsx        # Master scenario document (20 scenarios)
+│   └── DemoBlaze_Test_Scenarios.xlsx        
 │
 ├── 📁 04_Test Cases/
 │   ├── Signup_Test_Cases.xlsx
@@ -285,13 +285,13 @@ New  →  Open  →  In Progress  →  Fixed  →  Retest  →  Closed
 ├── 📁 08_Application_Screenshots/
 │   └── Application screenshots used as test evidence
 │
-├── 📁 Demoblaze automation/                 # ✅ Selenium Automation Suite
+├── 📁 Demoblaze automation/                 
 │   ├── HTML test files
 │   ├── Python scripts
 │   └── CSS styling / reports
 │
 ├── LICENSE
-└── README.md                                # ← You are here
+└── README.md                               
 ```
 
 ---
@@ -325,7 +325,7 @@ New  →  Open  →  In Progress  →  Fixed  →  Retest  →  Closed
 
 ---
 
-### ⭐ If this project impressed you, please consider giving it a star!
+### ⭐ If this project impressed you, mail me your feedback!
 
 *This project is part of an active QA portfolio — continuously updated with new test artifacts, execution results, and automation enhancements.*
 
