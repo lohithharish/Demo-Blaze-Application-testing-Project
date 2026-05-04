@@ -105,7 +105,7 @@
 ┌──────────────────────────────────────────────────────────────────┐
 │                    TEST COVERAGE AT A GLANCE                     │
 ├──────────────────────────────┬───────────────────────────────────┤
-│  Total Test Scenarios        │  20 Scenarios (TS_001–TS_020)     │
+│  Total Test Scenarios        │  18 Scenarios                     │
 │  Total Test Cases            │  1,000+                           │
 │  Modules Covered             │  12 Modules                       │
 │  Total Bugs Reported (Jira)  │  72 Bugs (Project: DBPS)          │
